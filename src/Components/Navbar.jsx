@@ -30,7 +30,7 @@ export default function Navbar(props) {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton href={`/${item.toLowerCase()}`} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={item} />
                         </ListItemButton>
                     </ListItem>
@@ -61,9 +61,9 @@ export default function Navbar(props) {
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {navItems.map((item) => (
-                        <NavLink to={`/${item.toLowerCase()}`} key={item} sx={{ color: '#fff' }}>
+                        <Button href={`/${item.toLowerCase()}`} key={item} sx={{ color: '#fff' }}>
                             {item}
-                        </NavLink >
+                        </Button >
                     ))}
                 </Box>
             </Toolbar>
