@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { AppBar, Box, Toolbar, Typography, Button, IconButton, Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import { NavLink } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Large"];

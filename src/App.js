@@ -17,7 +17,7 @@ const App = () => {
     <>
       <CssBaseline />
       <Navbar />
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main">
         <Toolbar />
         <Routes>
           <Route path="/" element={<Home />} />
