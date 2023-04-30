@@ -2,7 +2,7 @@
     height: calc(100vh - 64px);
 
     #logo-container {
-        height: 30vh;
+        height: 40vh;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -18,8 +18,30 @@
         }
     }
 
+    #eggs {
+        display: flex;
+        height: calc(100vh - 40vh - 64px);
+        padding: 2em;
+        justify-content: space-around;
+        background-color: #f7f8f9;
+        clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    @media (max-width: 800px) {
+        #eggs {
+            flex-direction: column;
+            height: 60em;
+            justify-content: space-between;
+            clip-path: none;
+
+            .eggContainer {
+                align-self: center !important;
+            }
+        }
+    }
+
     #amigos-container {
-        height: calc(100vh - 30vh - 64px + 10vh);
+        height: calc(100vh - 40vh - 64px + 10vh);
         position: relative;
         top: -10vh;
         background-color: transparent;

@@ -1,6 +1,7 @@
 
 import BirdsFlying from "Components/BirdsFlying";
 import "./Home.scss";
+import Egg from "Components/Egg";
 
 export default function Home() {
 
@@ -10,12 +11,12 @@ export default function Home() {
             <img alt="Pathocalme logo" src={require("Assets/Images/logo.png")} />
             <BirdsFlying />
         </div>
-        <div id="amigos-container">
-            <div id="picture-container" />
-            {/* <img alt="3 chevreaux" src={require("Assets/Images/3amigos.jpg")} /> */}
+
+        <div id="eggs">
+            <Egg eggColor="#a5b6a6" title="Animation" target="/animation" />
+            <Egg eggColor="#bd6966" title="Médiation" target="/mediation" align="flex-end" />
+            <Egg title="Pédagogie" target="/pedagogie" />
         </div>
-
-
 
     </div>
 }

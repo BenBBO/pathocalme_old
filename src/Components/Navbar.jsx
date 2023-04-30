@@ -1,12 +1,13 @@
 
 import React, { useState } from "react";
 
-import { AppBar, Box, Toolbar, Typography, Button, IconButton, Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
+import { AppBar, Box, Toolbar, Button, IconButton, Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Large"];
+const navItems = ["Animation", "Mediation", "Pedagogie"];
 
 export default function Navbar(props) {
 
@@ -22,9 +23,11 @@ export default function Navbar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
-            </Typography>
+            <Box sx={{ my: 2 }} >
+                <Link to="/">
+                    <img src={require("Assets/Images/logo.png")} style={{ height: '8em' }} />
+                </Link>
+            </Box>
             <Divider />
             <List>
                 {navItems.map((item) => (
@@ -51,13 +54,11 @@ export default function Navbar(props) {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-                >
-                    MUI
-                </Typography>
+                <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} >
+                    <Link to="/">
+                        <img src={require("Assets/Images/logo.png")} style={{ height: '3em' }} />
+                    </Link>
+                </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {navItems.map((item) => (
                         <Button href={`/${item.toLowerCase()}`} key={item} sx={{ color: '#fff' }}>
