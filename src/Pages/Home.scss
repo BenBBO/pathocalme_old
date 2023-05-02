@@ -54,6 +54,25 @@
             clip-path: ellipse(12% 20vh at 50% 0%);
         }
     }
+
+    .home-item-container {
+        height: calc(12em + 6vh + 3.5em);
+        overflow: hidden;
+
+        img {
+            height: calc(12em + 6vh + 3.5em);
+            width: 100%;
+            object-fit: cover;
+
+            &.right-aligned {
+                clip-path: polygon(100% 0%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            }
+
+            &.left-aligned {
+                clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0 0);
+            }
+        }
+    }
 }
 
 @keyframes pulse {
