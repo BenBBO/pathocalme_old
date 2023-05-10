@@ -5,6 +5,7 @@ import { AppBar, Box, Toolbar, Button, IconButton, Divider, Drawer, List, ListIt
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import "./Navbar.scss"
 
 const drawerWidth = 240;
 const navItems = ["Animation", "Mediation", "Pedagogie"];
@@ -43,7 +44,7 @@ export default function Navbar(props) {
 
 
     return <Box sx={{ flexGrow: 1 }}>
-        <AppBar component="nav">
+        <AppBar component="nav" id="main-navbar">
             <Toolbar>
                 <IconButton
                     color="inherit"
