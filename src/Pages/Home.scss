@@ -25,4 +25,25 @@
             font-size: 7em;
         }
     }
+
+    .home-description {
+        background-color: white;
+        padding: 1em 0;
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #f0bb28;
+            margin-bottom: 1em;
+        }
+
+        p {
+            padding: 1em;
+
+            &.visite {
+                color: #f0bb28;
+                font-size: 1.1em;
+            }
+        }
+    }
 }
