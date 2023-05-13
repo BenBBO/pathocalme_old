@@ -1,6 +1,7 @@
 import Egg from "Components/Egg";
 import "./Home.scss";
 import { Avatar, Container, Grid } from "@mui/material";
+import ChickenTrail from "Components/ChickenTrail";
 
 export default function Home() {
 
@@ -36,18 +37,20 @@ export default function Home() {
                 </Grid>
             </Container>
         </div>
-        <Grid container sx={{ padding: "1em" }}>
-            <Grid item md={4} xs={12}>
+        <Grid container>
+            <Grid item md={4} xs={12} className="first-egg">
                 <Egg eggColor="#a5b6a6" title="Animation" target="/animation" />
             </Grid>
-            <Grid item md={4} xs={12}>
+            <Grid item md={4} xs={12} className="second-egg">
                 <Egg eggColor="#bd6966" title="Médiation" target="/mediation" />
             </Grid>
-            <Grid item md={4} xs={12}>
+            <Grid item md={4} xs={12} className="third-egg">
                 <Egg title="Pédagogie" target="/pedagogie" />
             </Grid>
         </Grid>
+
         <div className="home-bottom">
+            <ChickenTrail />
             <Container fixed>
                 <Grid container spacing={2} alignItems="stretch" justifyContent="center">
                     <Grid item>

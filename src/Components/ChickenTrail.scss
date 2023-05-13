@@ -1,0 +1,12 @@
+#chicken-trail {    
+    padding: 2em;
+
+    .chicken-foot-print {
+        transform: rotate(90deg);
+        fill: black;
+
+        &:nth-child(odd) {
+            transform: rotate(90deg) translateX(1em);
+        }
+    }
+}

@@ -2,6 +2,10 @@
 
     text-align: center;
 
+    a {
+        text-decoration: none;
+    }
+
     .eggWrapper {
         position: relative;
         display: inline-flex;
@@ -107,7 +111,9 @@
     }
 
     .eggTitle {
-        font-size: 1.5em;
+        font-size: 3em;
+        font-family: 'Cookie', cursive;
+        color: white;
     }
 }
 

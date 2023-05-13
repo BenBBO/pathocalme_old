@@ -45,7 +45,7 @@ export default function Navbar(props) {
 
     return <Box sx={{ flexGrow: 1 }}>
         <AppBar component="nav" id="main-navbar">
-            <Toolbar>
+            <Toolbar sx={{ justifyContent: "center" }}>
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"
@@ -55,7 +55,7 @@ export default function Navbar(props) {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} >
+                <Box sx={{ display: { xs: 'none', sm: 'block' } }} >
                     <Link to="/">
                         <img src={require("Assets/Images/logo.png")} style={{ height: '3em' }} />
                     </Link>

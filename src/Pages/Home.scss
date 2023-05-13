@@ -47,8 +47,25 @@
         }
     }
 
+    .first-egg {
+        background-color: #bd6966;
+    }
+
+    .second-egg {
+        background-color: #ffffee;
+
+        .eggTitle {
+            color: black;
+        }
+    }
+
+    .third-egg {
+        background-color: #a5b6a6;
+    }
+
     .home-bottom {
         background-color: white;
+        padding: 1em;
 
         img {
             height: 15em;
@@ -69,7 +86,7 @@
 
             }
 
-            .bottom-contact a{
+            .bottom-contact a {
                 text-decoration: none;
                 font-weight: bold;
                 color: inherit;
