@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import { AppBar, Box, Toolbar, Button, IconButton, Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss"
 
 const drawerWidth = 240;
-const navItems = ["Animation", "Mediation", "Pedagogie"];
+const navItems = ["Acceuil", "Animation", "Mediation", "Pedagogie"];
 
 export default function Navbar(props) {
 
@@ -32,7 +32,7 @@ export default function Navbar(props) {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                    <ListItem key={item} disablePadding >
                         <ListItemButton href={`/${item.toLowerCase()}`} sx={{ textAlign: 'center' }}>
                             <ListItemText primary={item} />
                         </ListItemButton>
@@ -45,7 +45,7 @@ export default function Navbar(props) {
 
     return <Box sx={{ flexGrow: 1 }}>
         <AppBar component="nav" id="main-navbar">
-            <Toolbar sx={{ justifyContent: "center" }}>
+            <Toolbar>
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"
@@ -57,15 +57,16 @@ export default function Navbar(props) {
                 </IconButton>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }} >
                     <Link to="/">
-                        <img src={require("Assets/Images/logo.png")} style={{ height: '3em' }} />
+                        <img src={require("Assets/Images/logo.png")} style={{ height: '6em' }} />
                     </Link>
                 </Box>
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                <Box sx={{ display: { xs: 'none', sm: 'block', flexGrow:'1', textAlign:'center' } }}>
                     {navItems.map((item) => (
-                        <Button href={`/${item.toLowerCase()}`} key={item} sx={{ color: '#fff' }}>
+                        <NavLink to={`/${item.toLowerCase()}`} className="menu-target" key={item} sx={{ color: '#fff' }}>
                             {item}
-                        </Button >
-                    ))}
+                        </NavLink>
+                    )
+                    )}
                 </Box>
             </Toolbar>
         </AppBar>

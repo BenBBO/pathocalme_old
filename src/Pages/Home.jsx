@@ -2,16 +2,13 @@ import Egg from "Components/Egg";
 import "./Home.scss";
 import { Avatar, Container, Grid } from "@mui/material";
 import ChickenTrail from "Components/ChickenTrail";
+import { Link } from "react-router-dom";
+import HomeCarousel from "Components/HomeCarousel";
 
 export default function Home() {
 
     return <section id="home">
-        <div className="home-picture">
-            <div className="image-text">
-                <h2>Bienvenue chez </h2>
-                <h1>Path'O Calme</h1>
-            </div>
-        </div>
+        <HomeCarousel />
         <div className="home-description">
             <Container fixed>
                 <h2>À quelques minutes de Bourgoin-Jallieu, Animation, Médiation et Pédagogie de 0 à 99+ ans</h2>
@@ -32,20 +29,33 @@ export default function Home() {
                         </p>
                     </Grid>
                     <Grid item md={4} xs={12}>
-                        <Avatar src={require("Assets/Images/barbara.jpg")} sx={{ width: "30vh", height: "30vh" }} />
+                        <Avatar src={require("Assets/Images/bab.jpg")} sx={{ width: "30vh", height: "30vh" }} />
                     </Grid>
                 </Grid>
             </Container>
         </div>
         <Grid container>
             <Grid item md={4} xs={12} className="first-egg">
-                <Egg eggColor="#a5b6a6" title="Animation" target="/animation" />
+                <Link to="/animation">
+                    <img src={require("Assets/Images/pate_oiseau.png")} style={{ width: "30vh", height: "30vh" }} />
+                    <span>Animation</span>
+                </Link>
+
+                {/* <Egg eggColor="#a5b6a6" title="Animation" target="/animation" /> */}
             </Grid>
             <Grid item md={4} xs={12} className="second-egg">
-                <Egg eggColor="#bd6966" title="Médiation" target="/mediation" />
+                <Link to="/mediation">
+                    <img src={require("Assets/Images/pate_cochon.png")} style={{ width: "30vh", height: "30vh" }} />
+                    <span>Médiation</span>
+                </Link>
+                {/* <Egg eggColor="#bd6966" title="Médiation" target="/mediation" /> */}
             </Grid>
             <Grid item md={4} xs={12} className="third-egg">
-                <Egg title="Pédagogie" target="/pedagogie" />
+                <Link to="/pedagogie">
+                    <img src={require("Assets/Images/pate_chien.png")} style={{ width: "30vh", height: "30vh" }} />
+                    <span>Pédagogie</span>
+                </Link>
+                {/* <Egg title="Pédagogie" target="/pedagogie" /> */}
             </Grid>
         </Grid>
 

@@ -23,6 +23,16 @@ code {
     monospace;
 }
 
+main {
+  padding-top: 56px;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-top: 6em;
+  }
+}
+
 #fab-container {
   position: fixed;
   bottom: 1em;

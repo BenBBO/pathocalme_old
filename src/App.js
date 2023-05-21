@@ -24,9 +24,9 @@ const App = () => {
       <CssBaseline />
       <Navbar />
       <Box component="main">
-        <Toolbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/acceuil" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/animation" element={<Animation />} />
           <Route path="/mediation" element={<Mediation />} />

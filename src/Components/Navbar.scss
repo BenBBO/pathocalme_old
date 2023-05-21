@@ -1,3 +1,22 @@
-#main-navbar{
-    background-color: #f0bb28;
+#main-navbar {
+    background-color: #ccb49a;
+    color: black;
+
+    a.menu-target {
+
+        font-size: 1.1em;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1em;
+        color: white;
+        // color: #f0bb28;
+
+        
+
+        &:hover,&.active {
+            background-color: #a28261;
+            font-weight: bold;
+        }
+    }
 }

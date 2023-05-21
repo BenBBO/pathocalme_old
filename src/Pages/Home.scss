@@ -47,20 +47,21 @@
         }
     }
 
-    .first-egg {
-        background-color: #bd6966;
-    }
+    div[class*="-egg"] {
 
-    .second-egg {
-        background-color: #ffffee;
+        padding: 2em;
 
-        .eggTitle {
-            color: black;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px;
         }
-    }
-
-    .third-egg {
-        background-color: #a5b6a6;
     }
 
     .home-bottom {
