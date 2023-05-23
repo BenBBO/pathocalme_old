@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pathocalme/static/css/main.43a6f974.css",
+    "main.js": "/pathocalme/static/js/main.48ef2d02.js",
+    "static/media/bab.jpg": "/pathocalme/static/media/bab.91715345a6cb8df34eea.jpg",
+    "static/media/3amigos.jpg": "/pathocalme/static/media/3amigos.2f09f95c21cd52879a08.jpg",
+    "static/media/mediation.jpg": "/pathocalme/static/media/mediation.f5f7f7004a7e2a1192a2.jpg",
+    "static/media/logo.png": "/pathocalme/static/media/logo.a096687ee769a2564921.png",
+    "static/media/hamac.jpg": "/pathocalme/static/media/hamac.22724ee58b2111c42b10.jpg",
+    "static/media/pate_chien.png": "/pathocalme/static/media/pate_chien.c2d623ecd7db5338d0be.png",
+    "static/media/pate_cochon.png": "/pathocalme/static/media/pate_cochon.f4c11b79effd02b7c6ef.png",
+    "static/media/pate_oiseau.png": "/pathocalme/static/media/pate_oiseau.8029f05a77609994edc7.png",
+    "static/media/chickenTrail.svg": "/pathocalme/static/media/chickenTrail.6ee710c55bf5001b2d6eac1b5034084d.svg",
+    "index.html": "/pathocalme/index.html",
+    "main.43a6f974.css.map": "/pathocalme/static/css/main.43a6f974.css.map",
+    "main.48ef2d02.js.map": "/pathocalme/static/js/main.48ef2d02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43a6f974.css",
+    "static/js/main.48ef2d02.js"
+  ]
+}
